@@ -16,17 +16,17 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-x-12">
         <div className="text-center md:text-left md:max-w-xl">
           <h1 className="text-4xl sm:text-6xl font-extrabold text-[#4e342e] leading-tight">
-            Digitize Your Café Experience
+            Your Café, Smarter.
           </h1>
           <p className="mt-6 text-lg text-[#6b4c3b]">
-            Let your customers explore your menu anytime, anywhere — no app
-            needed, no paper menus, no wait.
+            Create a digital menu in minutes — no printing, no delays, just a
+            seamless customer experience.
           </p>
           <a
             href="/register"
             className="mt-8 inline-flex items-center bg-[#d4a373] hover:bg-[#c28d5f] text-[#1a1a1a] font-semibold px-6 py-3 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105"
           >
-            Get Started
+            Join Coffee Hub Today
             <svg
               className="ms-2 w-4 h-4 rtl:rotate-180"
               fill="none"
