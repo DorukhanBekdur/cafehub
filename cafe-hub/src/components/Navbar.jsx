@@ -1,15 +1,14 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-2xl font-bold text-[#73b1a6] tracking-wide">
-          Coffee<span className="text-[#f7ba34]">Hub</span>
+        <div className="bg-[#fefaf6] p-3 rounded-md inline-block shadow">
+          <Logo />
         </div>
 
-        {/* Menü */}
         <ul className="hidden md:flex space-x-8 text-[#333] font-medium">
           <li>
             <a
@@ -34,7 +33,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* CTA */}
         <div>
           <a
             href="/register"
