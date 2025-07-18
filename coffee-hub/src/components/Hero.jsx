@@ -1,10 +1,9 @@
 import React from "react";
-import CoffeeImage from "../../public/images/coffee-hero.jpg";
+import CoffeeImage from "/images/coffee-hero.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden">
-      {/* SVG pattern arka plan */}
       <div
         className="absolute inset-0 -z-10 opacity-20"
         style={{
@@ -15,7 +14,6 @@ const Hero = () => {
       />
 
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-x-12">
-        {/* Sol taraf */}
         <div className="text-center md:text-left md:max-w-xl">
           <h1 className="text-4xl sm:text-6xl font-extrabold text-[#4e342e] leading-tight">
             Digitize Your Café Experience
@@ -46,7 +44,6 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Sağ taraf */}
         <div className="mb-12 md:mb-0 md:w-1/2 flex justify-center">
           <img
             src="/images/coffee-hero.jpg"
