@@ -1,9 +1,20 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import WhyCoffeeHub from "./components/WhyCoffeeHub";
+import HowItWorks from "./components/HowItWorks";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold">Cafe Hub</h1>
+      <Navbar />
+      <Hero />
+      <WhyCoffeeHub />
+      <HowItWorks />
+      <FAQ />
+      <Footer />
     </>
   );
 }
