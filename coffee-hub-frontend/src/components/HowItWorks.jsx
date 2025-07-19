@@ -1,45 +1,59 @@
 import React from "react";
 
 const HowItWorks = () => {
+  const steps = [
+    {
+      number: 1,
+      title: "Create Your Profile",
+      description:
+        "Sign up and set up your café’s digital identity in minutes.",
+    },
+    {
+      number: 2,
+      title: "Build Your Menu",
+      description:
+        "Add your products, organize them into categories, and upload prices.",
+    },
+    {
+      number: 3,
+      title: "Share & Serve",
+      description:
+        "Print the QR code and let your customers browse your menu — no wait, no app.",
+    },
+  ];
+
   return (
-    <section id="howitworks" className="bg-[#f7f7f7] py-20 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#333] mb-6">
-          Coffee-Hub Nasıl Çalışır?
+    <section id="howitworks" className="bg-[#f5ebe0] py-24">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#4e342e] mb-4">
+          How It Works ?
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Sadece 3 adımda dükkanını dijitale taşı!
+        <p className="text-[#6b4c3b] mb-12 max-w-xl mx-auto">
+          In just a few simple steps, bring your café into the digital age.
+          Create your profile, build a menu that reflects your brand, and offer
+          customers instant access through a sleek, QR-powered interface.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-10">
-          {/* Adım 1 */}
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition-shadow">
-            <div className="text-4xl font-bold text-[#73b1a6] mb-2">1</div>
-            <h3 className="text-xl font-semibold mb-3">Kayıt Ol</h3>
-            <p className="text-gray-700">
-              Hızlıca üyeliğini oluştur. Platforma giriş yaparak işletmeni
-              kaydet.
-            </p>
-          </div>
-
-          {/* Adım 2 */}
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition-shadow">
-            <div className="text-4xl font-bold text-[#73b1a6] mb-2">2</div>
-            <h3 className="text-xl font-semibold mb-3">Menünü Oluştur</h3>
-            <p className="text-gray-700">
-              Kategorilere göre ürünlerini ekle, fiyatlarını belirle ve kaydet.
-            </p>
-          </div>
-
-          {/* Adım 3 */}
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition-shadow">
-            <div className="text-4xl font-bold text-[#73b1a6] mb-2">3</div>
-            <h3 className="text-xl font-semibold mb-3">Müşterilerin Erişsin</h3>
-            <p className="text-gray-700">
-              Artık menünüz Coffee-Hub’da! QR kodla göster ya da sayfanı paylaş.
-            </p>
-          </div>
-        </div>
+        <ol className="flex flex-col sm:flex-row items-start sm:items-stretch justify-center gap-10">
+          {steps.map((step) => (
+            <li
+              key={step.number}
+              className="flex sm:flex-col sm:items-center gap-4 sm:gap-3 max-w-xs text-left sm:text-center"
+            >
+              <span className="flex items-center justify-center w-12 h-12 border-2 border-[#d4a373] text-[#4e342e] rounded-full font-bold text-lg">
+                {step.number}
+              </span>
+              <div>
+                <h3 className="text-lg font-semibold text-[#4e342e]">
+                  {step.title}
+                </h3>
+                <p className="text-sm text-[#6b4c3b] mt-1">
+                  {step.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
