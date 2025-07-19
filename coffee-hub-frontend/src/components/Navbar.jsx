@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-[#fefaf6] via-[#f2e6dc] to-[#e7d3c2] shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="p-1">
-          <Logo />
+          <Logo coffeeColor="#4e342e" hubColor="#d4a373" />
         </div>
 
         <ul className="hidden md:flex space-x-8 text-[#4e342e] font-medium">

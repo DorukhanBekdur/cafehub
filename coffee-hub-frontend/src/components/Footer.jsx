@@ -1,63 +1,44 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#333] text-white py-10 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
-        {/* Logo ve Tanım */}
-        <div>
-          <h3 className="text-2xl font-bold mb-2">
-            Coffee<span className="text-[#f7ba34]">Hub</span>
-          </h3>
-          <p className="text-gray-300 text-sm">
-            Kahve dükkanınızı dijitale taşıyın. Müşterilerinizin sizi kolayca
-            bulmasını sağlayın.
-          </p>
-        </div>
-
-        {/* Linkler */}
-        <div>
-          <h4 className="text-lg font-semibold mb-3">Linkler</h4>
-          <ul className="space-y-2 text-gray-300 text-sm">
+    <footer className="bg-[#4e342e] rounded-none shadow-sm">
+      <div className="w-full max-w-screen-xl mx-auto px-4 py-8 md:py-12">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <a href="#hero" className="flex items-center mb-6 sm:mb-0 space-x-3">
+            <span className="self-center text-2xl text-[#f7f7f7] tracking-wide">
+              <Logo
+                coffeeColor="#f7f7f7"
+                hubColor="#d4a373"
+                className="text-base sm:text-lg"
+              />
+            </span>
+          </a>
+          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-[#e0d6c8] sm:mb-0">
             <li>
-              <a href="#features" className="hover:text-[#f7ba34]">
-                Neden Coffee-Hub?
+              <a href="#features" className="hover:underline me-4 md:me-6">
+                Why Coffee-Hub
               </a>
             </li>
             <li>
-              <a href="#howitworks" className="hover:text-[#f7ba34]">
-                Nasıl Çalışır?
+              <a href="#howitworks" className="hover:underline me-4 md:me-6">
+                How It Works
               </a>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#f7ba34]">
-                SSS
-              </a>
-            </li>
-            <li>
-              <a href="/register" className="hover:text-[#f7ba34]">
-                Kayıt Ol
+              <a href="#faq" className="hover:underline">
+                FAQ
               </a>
             </li>
           </ul>
         </div>
-
-        {/* Sosyal Medya */}
-        <div>
-          <h4 className="text-lg font-semibold mb-3">Bizi Takip Et</h4>
-          <div className="flex justify-center md:justify-start space-x-4">
-            <a href="#" className="hover:text-[#f7ba34]">
-              Instagram
-            </a>
-            <a href="#" className="hover:text-[#f7ba34]">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-10 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Coffee-Hub. Tüm hakları saklıdır.
+        <hr className="my-6 border-[#e0d6c8]/30 sm:mx-auto lg:my-8" />
+        <span className="block text-sm text-[#e0d6c8] text-center">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-semibold">Coffee-Hub</span> All rights reserved.
+          Developed by <span className="font-semibold">Dorukhan Bekdur.</span>
+        </span>
       </div>
     </footer>
   );
