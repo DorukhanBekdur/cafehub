@@ -1,10 +1,16 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
+import ChooseRole from "./pages/ChooseRole";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/choose-role" element={<ChooseRole />} />
+        </Routes>
+      </Router>
     </>
   );
 }

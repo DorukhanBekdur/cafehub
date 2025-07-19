@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,8 +38,8 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <a
-          href="/register"
+        <Link
+          to="/choose-role"
           className="bg-[#d4a373] hover:bg-[#c28d5f] text-[#1a1a1a] font-semibold px-6 py-2 rounded-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 inline-flex items-center"
         >
           Get Started
@@ -56,7 +57,7 @@ const Navbar = () => {
               strokeLinejoin="round"
             />
           </svg>
-        </a>
+        </Link>
 
         {/* Hamburger Icon */}
         <div className="md:hidden">
